@@ -14,3 +14,5 @@ def wrap(string, max_width):
     wrapper = textwrap.TextWrapper(max_width)
     word_list = wrapper.fill(string)
     return word_list
+
+##lessons learnt textwrap library, .fill returns string whereas .wrap returns list from string input
