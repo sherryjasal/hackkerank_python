@@ -3,8 +3,7 @@
 if __name__ == '__main__':
     n = int(input())
     arr = map(int, input().split())
-    new_set = set(arr)
-    new_list = list(new_set)
+    new_list = list(set(arr))
     final_list = sorted(new_list)
     second_largest_elt = final_list[-2]
     print(second_largest_elt)
